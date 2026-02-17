@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tanvir Ahmed Kabbo | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Animated Background -->
+<div class="background-blobs">
+    <div class="blob"></div>
+    <div class="blob"></div>
+</div>
+
+<canvas id="particles"></canvas>
+
+<!-- Navbar -->
+<nav class="glass">
+    <h3>Tanvir Kabbo</h3>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="themeToggle">🌙</button></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero fade-in">
+    <h1>Hello, I'm <span>Tanvir Ahmed Kabbo</span></h1>
+    <p>
+        CSE Student at BRAC University | AI & Full Stack Developer |
+        Building Scalable Intelligent Systems
+    </p>
+    <button onclick="scrollToSection('projects')">Explore My Work</button>
+</section>
+
+<!-- About Section -->
+<section id="about" class="fade-in">
+    <div class="glass card">
+        <h2>About Me</h2>
+        <p>
+            I am a 3rd year Computer Science & Engineering student at 
+            BRAC University, passionate about Artificial Intelligence, 
+            Full Stack Development, and scalable backend systems.
+            I specialize in MERN stack, Laravel, Spring Boot, and MySQL,
+            while actively exploring Machine Learning and advanced software architecture.
+        </p>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="fade-in">
+    <h2>Technical Skills</h2>
+    <div class="grid">
+        <div class="glass card">HTML, CSS, JavaScript</div>
+        <div class="glass card">MERN Stack</div>
+        <div class="glass card">Laravel & PHP</div>
+        <div class="glass card">Spring Boot</div>
+        <div class="glass card">MySQL</div>
+        <div class="glass card">Machine Learning & AI</div>
+        <div class="glass card">Computer Vision</div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="fade-in">
+    <h2>Projects</h2>
+
+    <div class="glass card">
+        <h3>Virtual Book Exchange System</h3>
+        <p>
+            Laravel-based web application featuring authentication, 
+            book listings, exchange requests, messaging, rating system, 
+            and admin moderation.
+        </p>
+        <div class="placeholder">
+            Link will be shared after deployment
+        </div>
+    </div>
+
+    <div class="glass card">
+        <h3>Nutri-Tracker (AI Powered)</h3>
+        <p>
+            Spring Boot full-stack system with AI-powered medicine suggestions, 
+            intelligent diet planning, and secure RESTful architecture.
+        </p>
+        <div class="placeholder">
+            Link will be shared after deployment
+        </div>
+    </div>
+
+    <div class="glass card">
+        <h3>AgriConnect Platform</h3>
+        <p>
+            Digital agricultural platform connecting farmers and buyers 
+            with scalable architecture and real-world deployment design.
+        </p>
+        <div class="placeholder">
+            Link will be shared after deployment
+        </div>
+    </div>
+
+</section>
+
+<!-- Contact -->
+<section id="contact" class="fade-in">
+    <div class="glass card">
+        <h2>Contact Me</h2>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button>Send Message</button>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
